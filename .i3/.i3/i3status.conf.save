@@ -1,0 +1,42 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+}
+
+order += "window_title"
+order += "clock"
+order += "sysdata"
+order += "battery_level"
+
+sysdata {
+	format = 'Mem: {mem_used}/{mem_total} GB'
+}
+
+ 
+clock 	{
+	format_time = "%A %B %H:
+%M"
+	align = 'left'
+	min_width = 450
+	}
+
+window_title {
+	align = 'left'
+	min_width = 450
+}
+
+battery_level {
+	min_width = 100
+	align = 'left'
+	format = 'Batt: {percent}%'
+        format_notify_discharging = '{percent}'
+	notification = false
+}
