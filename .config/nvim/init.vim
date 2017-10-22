@@ -70,7 +70,6 @@ call dein#add('jiangmiao/auto-pairs')
 call dein#add('maralla/completor.vim')
 
 " Automaticly Features Plugin
-call dein#add('pgdouyon/vim-evanesco')
 " call dein#add('b4b4r07/vim-sunset')
 
 " Benchmark Plugin
